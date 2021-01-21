@@ -9,6 +9,8 @@ Além do Rasa foram utilizados os seguintes componentes:
   - Flask-cors
   - CSS
 
+Para coletar as perguntas de uma maneira mais simples foi implementando um script utilizando o google colab, o mesmo pode ser facilmente adaptado para que as perguntas de qualquer uma das abas do faq possam ser capturadas, o código pode ser conferido no arquivo [fiocruz.ipynb](https://github.com/gabselbach/ChatBotCovid-19/blob/main/fiocruz.ipynb)
+
 Foi desenvolvido para ser disponibilizado o chatbot projetado uma versão de web e também uma versão para o telegram.
 
 #### Começando:
@@ -130,4 +132,4 @@ Por fim para utilizar o bot no telegram, basta acessá-lo [AQUI](http://t.me/Cov
 
 O bot em funcionamento:
 
-![](static/img/bottelegram.jpeg)
+![](static/img/bottelegram.jpeg =100x300)
