@@ -80,7 +80,8 @@ http://0.0.0.0:5056/
 
 Ambiente Web:
 
-<img src=”/static/img/webchat.jpg” width="200" height="150">
+
+![](static/img/webchat.jpg)
 Você poderá conversar com o bot. Caso queria iniciar o bot no terminal execute dentro da pasta bot/
 ```
 $ rasa shell
@@ -95,13 +96,13 @@ Caso você não consiga executar o arquivo engine_start ou não queira, para rod
 
 ```
 $ rasa run -m bot/models -p 5005 --enable-api --cors “”rasa run -m models --enable-api --cors “”
-``` 
+```
 
 E para rodar o ambiente web execute:
 
 ```
 $ python3 app.py
-``` 
+```
 
 Isso irá levantar o ambiente local que pode ser acessado pelo navegador no endereço que coloquei anteriormente.
 
@@ -118,6 +119,7 @@ O ngrok começará a ser executado no terminal e você conseguirá observar uma 
 
 ```
 https://e01a81c83cad.ngrok.io ->  http://localhost:5005/
+
 ```
 
 dentro da pasta bot/ no arquivo credentials.yml:
@@ -128,4 +130,4 @@ Por fim para utilizar o bot no telegram, basta acessá-lo [AQUI](http://t.me/Cov
 
 O bot em funcionamento:
 
-<img src=”/static/img/bottelegram.jpeg” width="100" height="250">
+![](static/img/bottelegram.jpeg)
