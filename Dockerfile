@@ -3,6 +3,7 @@ FROM ubuntu:18.04
 RUN apt-get update && \
     apt-get install -y python3 sudo nano vim python3-pip
 
+
 RUN useradd -m botcovid19
 RUN chown -R botcovid19:botcovid19 /home/botcovid19/
 

@@ -1,0 +1,90 @@
+.topo{
+    border: 2px #eee solid;
+}
+.topo p {
+    color: #FFFFF0;
+}
+h1 {
+    color:#E0FFFF;
+    text-align: center;
+    padding: 10px;
+}
+#webchat {
+    margin-left: 30%;
+    height: 400px;
+    max-width: 600px;
+    max-height: 400px;
+    overflow: auto;
+    background-color: #E6E6FA;/*#fcfcfe;*/
+    margin-bottom: 1%;
+
+    
+}
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/virus.jpeg');
+    font-family: Helvetica, sans-serif;
+  }
+  
+  
+  .msg {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+  .msg-bubble {
+    max-width: 450px;
+    padding: 15px;
+    border-radius: 15px;
+    background: #BEBEBE;
+    border-bottom-right-radius: 0;
+  }
+  .msg-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .msg-info-name {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .right-msg {
+    flex-direction: row-reverse;
+  }
+  .left-msg .msg-bubble{
+    background:#4682B4;
+    color: #fff;
+  }
+
+.caixa{
+    align-items: center;
+    box-sizing: content-box;
+border: 1px solid #BEBEBE;
+background-color: #E6E6FA;
+color: #000000;
+font-size: medium;
+padding-top: 1%;
+height: 40px;
+width: 44.5%;
+margin-left: 30%;
+-webkit-appearance: none;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+-ms-border-radius: 8px;
+border-radius: 8px;
+-moz-box-shadow: 0 2px 4px 0 rgba(148,148,148,0.16);
+-webkit-box-shadow: 0 2px 4px 0 rgba(148,148,148,0.16);
+box-shadow: 0 2px 4px 0 rgba(148,148,148,0.16);
+
+}
+
+.submit-chat{
+    margin-left: -7%;
+    margin-top: 1%;
+    text-decoration: none;
+
+}

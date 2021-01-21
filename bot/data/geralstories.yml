@@ -1,0 +1,79 @@
+version: "2.0"
+
+stories:
+- story: geral1 storie
+  steps:
+  - intent: geral1
+  - action: utter_geral1
+
+- story: geral2 storie
+  steps:
+  - intent: geral2
+  - action: utter_geral2
+
+- story: geral3 storie
+  steps:
+  - intent: geral3
+  - action: utter_geral3
+
+- story: geral4 storie
+  steps:
+  - intent: geral4
+  - action: utter_geral4
+
+- story: geral5 storie
+  steps:
+  - intent: geral5
+  - action: utter_geral5
+
+- story: geral6 storie
+  steps:
+  - intent: geral6
+  - action: utter_geral6
+
+- story: geral7 storie
+  steps:
+  - intent: geral7
+  - action: utter_geral7
+
+- story: geral8 storie
+  steps:
+  - intent: geral8
+  - action: utter_geral8
+
+- story: geral9 storie
+  steps:
+  - intent: geral9
+  - action: utter_geral9
+
+- story: geral10 storie
+  steps:
+  - intent: geral10
+  - action: utter_geral10
+
+- story: geral11 storie
+  steps:
+  - intent: geral11
+  - action: utter_geral11
+
+- story: geral12 storie
+  steps:
+  - intent: geral12
+  - action: utter_geral12
+
+- story: geral13 storie
+  steps:
+  - intent: geral13
+  - action: utter_geral13
+
+
+- story: geral14 storie
+  steps:
+  - intent: geral14
+  - action: utter_geral14
+
+- story: geral15 storie
+  steps:
+  - intent: geral15
+  - action: utter_geral15
+

@@ -1,0 +1,131 @@
+version: "2.0"
+
+nlu:
+- intent: geral1
+  examples: |
+    - covid
+    - covid-19
+    - o que é o covid-19?
+
+- intent: geral2
+  examples: |
+    - sintomas
+    - quais são os sintomas da doença?
+    - quais são os sintomas do covid?
+    - quais são os sintomas da doença?
+    - o que posso sentir se estiver com covid?
+  
+- intent: geral3
+  examples: |
+    - coronavírus
+    - sars
+    - sars-cov-2
+    - novo-coronavírus
+
+- intent: geral4
+  examples: |
+    - transmissão
+    - como acontece a transmissão da doença?
+    - posso transmitir a doença ?
+    - o que é transmissão comunitária?
+    - o que é transmissão sustentada?
+    - mesmo não tendo sintomas possa transmitir a doença?
+    - mesmo que não tenha sintomas posso transmitir a doença?
+    - tendo sintomas leves possa transmitir a doença ?
+
+- intent: geral5
+  examples: |
+    - testes
+    - me fale sobre os testes do covid?
+    - estão sendo feitos testes?
+    - como posso realizar o teste do coronavirus?
+    - como posso realizar o teste para covid?
+    - posso fazer os testes?
+    - consigo fazer um teste da doença? 
+
+- intent: geral6
+  examples: |
+    - atendimento
+    - quando tevo procurar um  atendimento?
+    - preciso ir ao hospital?
+    - estou com gripe, preciso ir ao hospital?
+
+- intent: geral7
+  examples: |
+    - quem faz parte do grupo de risco?
+    - quem são as pessoas que mais sofrem com a doença ?
+    - a doença é mais seria em que pessoas?
+    - idosos 
+
+- intent: geral8
+  examples: |
+    - estou grávida
+    - mulheres grávidas podem pegar a doença?
+    - gravidez
+    - gestação
+    - como contrair a doença estando grávida?
+    - tenho maiores riscos de contrair a doença estando grávida?
+    - o meu bebe corre algum risco da doeça ?
+    - amamentação
+    - posso amamentar o meu bebe estando com a doença?
+    - como acontecer amamentação com o covid?  
+
+- intent: geral9
+  examples: |
+    - medidas de segurança
+    - que medidas devo tomar para prevenção
+    - prevenção da doença
+    - alcool gel
+    - lavar as mãos
+    - quando lavar as mãos
+
+- intent: geral10
+  examples: |
+    - viagem
+    - posso viajar?
+    - como realizar uma viagem em tempo de pandemia?
+    - posso sair do pais?
+
+- intent: geral11
+  examples: |
+    - incubação
+    - o que é o período de incubação?
+    - quanto tempo devo ficar em casa se tive a doença?
+    - quanto tempo leva o periodo de incubação?
+    - se tive a doença preciso ficar em casa?
+
+- intent: geral12
+  examples: |
+    - máscara
+    - preciso usar a máscara?
+    - quando devo utilizar a máscara?
+    - em locais públicos preciso utilizar a máscara?
+
+- intent: geral13
+  examples: |
+    - medicamentos
+    - que remédio devo usar para o covid?
+    - que remédio usar para a doença?
+    - existe um remédio para combater a doença?
+    - antibióticos
+    - tomar antibiótico ajuda ?
+    - qual remédio devo tomar?
+    - preciso de remédio?
+    - posso usar a cloroquina?
+    - a cloroquina faz efeito contra o covid?
+    - a cloroquina pode ser usada para combater o coronavirus?
+
+- intent: geral14
+  examples: |
+    - luvas
+    - devo usar luvas?
+    - quando preciso usar luvas?
+    - em locais publicos preciso usar luvas?
+    - o uso de luvas é indicado?
+  
+- intent: geral15
+  examples: |
+    - vacina
+    - existe vacina?
+    - posso tomar a vacina ?
+    - a vacina já começou a ser aplicada? 

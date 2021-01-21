@@ -1,0 +1,60 @@
+version: "2.0"
+
+nlu:
+- intent: populacao1
+  examples: |
+    - lavar as mãos
+    - sabão
+    - água e sabão matam o vírus?
+    - como posso fazer para acabar com o vírus?
+    - como posso matar o vírus?
+    - ferver água pode matar o vírus?
+    - quem que temperaturas o vírus morre? 
+    - qual temperatura que destroi o vírus?
+
+- intent: populacao2
+  examples: |
+   - álcool gel
+   - posso fazer álcool gel em casa?
+   - existe receita de álcool gel caseiro?
+  
+- intent: populacao3
+  examples: |
+   - alho
+   - consumir alho ajuda na prevenção do coronavírus?
+   - receitas para prevenção
+   - vitamina
+   - própolis
+   - vitamina C
+   - vitamina D
+   - chás
+   - hortelã
+   - mel 
+   - abacate
+
+- intent: populacao4
+  examples: |
+    - tenho um parente com coronavírus em casa
+    - minha mãe está com coronavírus
+    - na minha casa existe uma pessoa com a doença
+    - que condutas devo tomar tendo uma pessoa infectada em casa?
+    - que itens precisam ser separados?
+    - devo separar itens?
+    - isolamento domiciliar
+    - preciso me isolar dos meus parentes
+    - como a pessoa deve se isolar em casa
+
+- intent: populacao5
+  examples: |
+    - posso pegar coronavirus do meu cachorro?
+    - os animais podem transmitir a doença?
+    - animais
+    - meu gato pode ter coronavirus?  
+  
+- intent: populacao6
+  examples: |
+    - preciso adiar reuniões?
+    - posso ir em um casamento?
+    - posso ir em festas?
+    - tenho um evento marcado devo cancelar?
+    - 

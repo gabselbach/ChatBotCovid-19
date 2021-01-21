@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+<body>
+ 
+    <center class="topo">
+        <h1>Seja bem vindo ao webchat Sobre o Covid-19</h1>
+        <p>Todas as informações aqui contidas foram retiradas do site da FioCruz</p>
+    </center>
+
+    <div id="webchat" class="msger-chat">
+       
+    </div>
+    <div id="todo">
+       
+        <input class="caixa">
+        <button id="submitchat" class="submit-chat" ><img src="static/img/send.png" /></button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            function getchat(conteudo){
+                $.ajax({
+                        type: 'POST',
+                        url: 'http://0.0.0.0:5056/process',
+                        data: JSON.stringify({ message: conteudo }),
+                        dataType: 'json',
+                        success: function (res) {
+                            var array = '';
+                            array+='<div class="msg right-msg"><div class="msg-bubble">';
+                                array+='<div class="msg-info-name">Você:</div>';
+                                array+='<div class="msg-text">' + conteudo + '</div></div></div>';
+                                $("#webchat").append(array);
+                                array='';
+                                array+='<div class="msg left-msg">';
+                    array+='<div class="msg-bubble">';
+                                array+='<div class="msg-info-name">Julia:</div>';
+                                array+='<div class="msg-text">' + res.valor + '</div></div></div></div>';
+                                $("#webchat").append(array);
+                            $('input').val('')
+                        },
+                        error: function (err) {
+                            console.log(err);
+                        }
+                    });
+            }
+            $.ajax({
+                type: 'POST',
+                url: 'http://0.0.0.0:5056/process',
+                data: JSON.stringify({ message: '/start' }),
+                dataType: 'json',
+                success: function (res) {
+                    var array = '';
+                    array+='<div class="msg left-msg">';
+                    array+='<div class="msg-bubble">';
+                        array+='<div class="msg-info-name">Julia:</div>';
+                        array+='<div class="msg-text">' + res.valor + '</div></div></div>';
+                    $("#webchat").append(array);
+
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+            $(".caixa").keypress(function (e) {
+                if (e.keyCode == 13 && $(".caixa").val().length > 1) {
+                    var conteudo = $(".caixa").val()
+                    getchat(conteudo);
+                }
+
+            });
+            $(".submit-chat").click(function (e){
+                if ($(".caixa").val().length > 1) {
+                    var conteudo = $(".caixa").val()
+                    getchat(conteudo);
+                }
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

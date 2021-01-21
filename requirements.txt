@@ -1,4 +1,4 @@
 flask
 rasa
-Flask-PyMongo
 requests
+flask-cors

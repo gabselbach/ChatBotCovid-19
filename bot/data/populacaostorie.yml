@@ -1,0 +1,32 @@
+version: "2.0"
+
+stories:
+- story: populacao1 storie
+  steps:
+  - intent: populacao1
+  - action: utter_populacao1
+
+- story: populacao2 storie
+  steps:
+  - intent: populacao2
+  - action: utter_populacao2
+
+- story: populacao3 storie
+  steps:
+  - intent: populacao3
+  - action: utter_populacao3
+
+- story: populacao4 storie
+  steps:
+  - intent: populacao4
+  - action: utter_populacao4
+
+- story: populacao5 storie
+  steps:
+  - intent: populacao5
+  - action: utter_populacao5
+
+- story: populacao6 storie
+  steps:
+  - intent: populacao6
+  - action: utter_populacao6

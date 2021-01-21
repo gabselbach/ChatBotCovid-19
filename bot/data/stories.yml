@@ -1,0 +1,85 @@
+version: "2.0"
+
+stories:
+- story: inicio
+  steps:
+  - intent: start
+  - action: utter_bem_vindo
+
+- story: aleatorio path
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: triste
+  - action: utter_triste
+  - intent: out_of_scope
+  - action: utter_aleatorio
+
+- story: aleatorio path 2
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: feliz
+  - action: utter_feliz
+  - intent: out_of_scope
+  - action: utter_aleatorio
+
+- story: aleatorio path 2
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: feliz
+  - action: utter_feliz
+  - intent: me_ajuda
+  - action: utter_me_ajuda
+
+
+- story: futebol path
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: futebol
+  - action: utter_esporte
+
+
+- story: triste path
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: triste
+  - action: utter_triste
+  - intent: geral1
+  - action: utter_geral1
+
+- story: feliz path sig corona
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: feliz
+  - action: utter_feliz
+  - intent: geral1
+  - action: utter_geral1
+
+- story: ajuda path
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: feliz
+  - action: utter_feliz
+  - intent: me_ajuda
+  - action: utter_me_ajuda
+  - intent: geral1
+  - action: utter_geral1
+
+- story: ajuda path 2
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: triste
+  - action: utter_triste
+  - intent: me_ajuda
+  - action: utter_me_ajuda
+
+
+##########################################################################################
+

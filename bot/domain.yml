@@ -1,0 +1,207 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- start:
+    use_entities: true
+- saudacao:
+    use_entities: true
+- despedida:
+    use_entities: true
+- triste:
+    use_entities: true
+- feliz:
+    use_entities: true
+- sentimento_bom:
+    use_entities: true
+- sentimento_ruim:
+    use_entities: true
+- sobre:
+    use_entities: true
+- aleatorio:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- me_ajuda:
+    use_entities: true
+
+- geral1
+- geral2
+- geral3
+- geral4
+- geral5
+- geral6
+- geral7
+- geral8
+- geral9
+- geral10
+- geral11
+- geral12
+- geral13
+- geral14
+- geral15
+
+- populacao1
+- populacao2
+- populacao3
+- populacao4
+- populacao5
+- populacao6
+entities: []
+slots: {}
+responses:
+  utter_default:
+  - text: Desculpe não entendi?
+  utter_triste:
+  - text: que pena que você está assim!Você precisa saber de algo sobre a pandemia que estavamos enfrentando?
+  utter_feliz:
+  - text: que maravilha! Você precisa saber de algo sobre a pandemia que estavamos enfrentando?
+  utter_aleatorio:
+  - text: Desculpe não entendi voce pode repetir
+  utter_saudacao:
+  - text: Ola, como voce esta?
+  utter_me_ajuda:
+  - text: |
+      Aqui posso ajudar você com assuntos sobre o covid-19. 
+      Ainda estou apredendo por enquanto posso falar sobre:
+      A doença em si, sintomas, sobre álcool gel, sobre o vírus, como matar o vírus, sobre a vacina, entre outras opções
+  utter_despedida:
+  - text: Foi um prazer ter conversado com você te espero para uma próxima vez!
+  utter_sobre:
+  - text: |
+      Eu sou a Julia, um bot para auxíliar com informações sobre o covid. 
+      Minha base de conhecimento foi extraida do site da Fiocruz. 
+      Caso você encontre algum problema durante a nossa conversa é culpa de quem me desenvolveu.
+      Fui desenvolvida pela Gabriella Selbach Staniecki, ela ainda está apresentando a utilizar rasa.
+      Por este motivo ainda posso ser aprimorada.
+  utter_bem_vindo:
+  - text: Damos inicio a nossa conversa de bot
+ ###################################################################################### 
+  utter_geral1:
+  - text: |
+        É o nome dado à doença causada pelo coronavírus. Esse nome vem de "Corona", "Vírus" e "Disease”
+        (doença), e 2019 representa o ano em que ela surgiu (o surto foi relatado à Organização Mundial
+        da Saúde em 31 de dezembro).
+  utter_geral2:
+  - text: |
+        Os sintomas da COVID-19 são bastante parecidos com os da gripe: febre, tosse e dificuldade para respirar.Os sinais e sintomas do novo coronavírus (SARS-CoV-2) são principalmente respiratórios. Ela pode causar infecção do trato respiratório inferior, como as pneumonias.
+        Na imagem à baixo você pode conferir as diferenças entre os sintomas do coronavírus, resfriado e gripe
+        Podem acontecer sintomas graves como febre alta, dificuldade respiratória e hipóxia podem aparecer rapidamente, principalmente em grupos vulneráveis como: idosos, pessoas com deficiência, pessoas com doenças crônicas ou imunodeprimidas.
+        Para controlar os sintomas você deve Beber bastante água auxilia no controle da febre. Banhos quentes e umidificadores de ar podem ser utilizados no quarto para ajudar a diminuir a dor de garganta e a tosse. O serviço de saúde deve ser procurado sempre que os sintomas se agravarem.
+    image: "https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/img/faq/tabela1.png"       
+  utter_geral3:
+  - text: |
+        A palavra coronavírus refere-se ao grupo ao qual o vírus pertence. 
+        SARS-CoV-2 é o nome do vírus, uma sigla para Severe Acute Respiratory Syndrome CoronaVirus 2 (síndrome respiratório aguda grave por coronavírus 2, em inglês). 
+        SARS-CoV-2, coronavírus, novo coronavírus é usado quando queremos nos referir ao vírus
+        O novo coronavírus foi identificado pela primeira vez em Wuhan, na província de Hubei, China, em pessoas expostas em um mercado de frutos do mar e de animais vivos.
+        O novo coronavírus não é igual aos anteriores. Os coronavírus pertencem a uma grande família de vírus, que podem circular tanto entre pessoas, como entre animais, incluindo camelos, gatos e morcegos. O recém-identificado coronavírus não é o mesmo que o coronavírus que provoca a Síndrome Respiratória do Oriente Médio (Mers) ou a Síndrome Respiratória Aguda Grave (Sars).
+  utter_geral4:
+  - text: |
+        O coronavírus é transmitido a partir de um indivíduo que tem o vírus, em contato próximo (cerca de 1m) com outras pessoas. Ocorre através do contato físico (aperto de mão, abraço etc), pequenas gotículas de saliva, espirro, tosse e através de objetos ou superfícies contaminadas, como celulares, mesas, maçanetas, brinquedos, teclados de computador etc.
+        Transmissão local: São casos de pessoas que se infectaram e não estiveram em nenhum país com registro da doença, mas tiveram contato com outro paciente infectado, que trouxe o vírus de fora do país.
+        Transmissão comunitária ou sustentada: São casos nos quais não é possível identificar as fontes de transmissão da doença. Esse tipo de transmissão sugere circulação ativa do vírus na comunidade.
+        Mesmo com sintomas leves ou sem apresentar nenhum sintoma você pode transmitir a doença.
+  utter_geral5:
+  - text: |
+        O laboratório de referência da Fiocruz realiza testes em materiais que são coletados nas unidades de saúde e enviados para a Fundação Oswaldo Cruz, pelos laboratórios centrais de saúde pública. A Fiocruz não realiza a coleta diretamente com os cidadãos.
+        Pessoas com dificuldade respiratória tem prioridade porque não há kits suficientes para todos que procuram os serviços de saúde. A pessoa que não tiver sintoma grave deve ficar em casa e circular o menos possível.
+  utter_geral6:
+  - text: |
+        A pessoa deve procurar uma unidade de saúde se apresentar sintomas mais intensos, como dificuldade para respirar, febre muito alta (a partir de 39°C) e mal-estar excessivo.
+ 
+  utter_geral7:
+  - text: |
+        Segundo a Organização Mundial da Saúde (OMS), adultos com mais de 60 anos e pessoas com doenças preexistentes têm maiores riscos de ter a doença agravada.
+        Algumas das doenças preexistentes de alerta são: hipertensão arterial, diabetes, doença cardíaca, doença pulmonar, neoplasias, transplantados, uso de imunossupressores.
+  utter_geral8:
+  - text: |
+        Atualmente, não se sabe se as mulheres grávidas têm maior chance de adoecer com o COVID-19 do que o público em geral, nem se são mais propensas a terem doenças graves como resultado. As mulheres grávidas sofrem alterações em seus corpos que podem aumentar o risco de algumas infecções. É sempre importante que se protejam de doenças.
+        Sobre a amamentação a Organização Mundial da Saúde (OMS) orienta a manutenção da amamentação. Até o momento, não há elementos que comprovem que o leite materno possa disseminar o novo coronavírus. A lactante com COVID-19 deve estar atenta à higiene respiratória, lavar as mãos antes e após tocar o seu bebê e limpar e desinfetar as superfícies rotineiramente.
+  utter_geral9:
+  - text: |
+        As medidas de Saúde que devem ser tomadas são as seguintes:
+        Lavar as mãos frequentemente com água e sabonete por pelo menos 20 segundos, respeitando os cinco momentos de higienização. Se não houver água e sabonete, usar um desinfetante para as mãos à base de álcool 70%.
+        Evitar tocar nos olhos, nariz e boca com as mãos não lavadas.
+        Evitar contato próximo com pessoas doentes e manter-se a uma distância de pelo menos um metro das demais pessoas.
+        Cobrir com o cotovelo ou com um lenço de papel a boca e nariz ao tossir ou espirrar. No caso do papel, jogar no lixo.
+        Limpar e desinfetar objetos e superfícies tocados com frequência.
+  utter_geral10:
+  - text: |
+        Apesar de não haver nenhuma restrição para viagens nacionais (domésticas), a orientação é que todos que tenham possibilidade de ficar em casa, que fiquem. Caso não seja possível, higienize suas mãos frequentemente com água e sabão ou álcool 70% ou e evite tocar o rosto. 
+        Mantenha-se a pelo menos um metro de distância das demais pessoas. Adote medidas de etiqueta respiratória e não viaje de forma alguma caso faça parte do grupo de risco ou apresente sintomas de tosse e febre.
+        Ao retornar de uma área com propagação de COVID-19, deve-se monitorar os sintomas por 14 dias.Em caso de sintomas leves, deve ser feito o isolamento. Em caso de sintomas graves, procurar uma unidade de saúde. 
+  utter_geral11:
+  - text: |
+        Período de incubação é o tempo que leva para aparecerem os primeiros sintomas, depois da infecção por coronavírus.O período de incubação pode variar de um a 14 dias, mais frequentemente ao redor de cinco dias.
+  utter_geral12:
+  - text: |
+        Principalmente para pessoas com sintomas respiratórios e profissionais na saúde devem usar máscaras. 
+        Mas é recomendado que todos utilizem máscara e em muitos lugares, principalmente espaços públicos sua utilização é obrigatória
+        Antes de tocar na máscara, limpe as mãos com um higienizador à base de álcool ou água e sabão.
+        Pegue a máscara e verifique se está rasgada ou com buracos
+        Coloque a máscara no seu rosto com cuidado para cobrir a boca e o nariz e amarre com segurança para minimizar as lacunas entre o rosto e a máscara; Aperte a tira de metal ou a borda rígida da máscara para que ela se adapte ao formato do seu nariz.
+        Puxe a parte inferior da máscara para que ela cubra sua boca e seu queixo. Enquanto estiver utilizando a máscara, evite tocá-la;
+        Substitua a máscara usada por uma nova máscara limpa e seca assim que estiver úmida ou danificada.
+  utter_geral13:
+  - text: |
+        Embora alguns medicamentos possam proporcionar conforto e aliviar os sintomas da COVID-19, não há evidências de que a medicina atual possa prevenir ou curar a doença. Não se recomenda a automedicação com nenhum medicamento, incluindo antibióticos, como forma de prevenção ou cura para a doença.
+        Os antibióticos não funcionam contra vírus, eles funcionam apenas em infecções bacterianas. A COVID-19 é causada por um vírus. Portanto, os antibióticos não funcionam.
+        Ainda não há evidências de que a cloroquina ou a variante hidroxicloroquina tenha efeito contra a COVID-19, doença provocada pelo novo coronavírus. Não se deve adquirir esses medicamentos, pois são importantes para várias condições reumatológicas e dermatológicas que exigem tratamento contínuo, além de apresentarem potenciais efeitos colaterais. 
+
+  utter_geral14:
+  - text: |
+        Não é indicado usar luvas em locais publicos como prevenção.
+        Lavar as mãos com água e sabão e evitar o contato com o rosto oferece uma proteção mais efetiva do que o uso de luvas ao sair de casa para locais públicos. 
+        É possível se contaminar pelo coronavírus mesmo utilizando luvas descartáveis caso você toque em superfícies contaminadas e logo após nos olhos, nariz ou boca.
+  utter_geral15:
+  - text: | 
+        A vacina começou a ser ministrada no Brasil dia 17/01/2020. No dia 19 todos os estados já estavam com suas respectivas doses e começaram seu sistema de vacinação.
+ ########################################################################################
+  utter_populacao1:
+  - text: |
+        Lavar as mãos, o corpo, roupas e superfícies com água e sabão é eficaz para remover o vírus.
+        De forma geral, vírus e bactérias são inativados por temperaturas acima de 70º C. Por isso, é seguro admitir que ferver água elimine o vírus. 
+        Entretanto, o uso de água quente como bebida ou para lavar roupas não garante a eliminação do vírus. Para limpar roupas e superfícies utilize água e sabão, álcool a 70% ou água sanitária.
+  utter_populacao2:
+  - text: |
+        Não, a OPAS e a OMS não divulgaram receita de gel para fazer em casa. Esse processo de produção caseira pode, inclusive, ser prejudicial à saúde. 
+        A recomendação da OPAS e da OMS é lavar as mãos com água e sabão ou higienizador à base de álcool.
+        Tanto álcool em gel quanto água e sabão são eficazes para matar vírus que podem estar nas mãos ou em outra parte do corpo.
+  utter_populacao3:
+  - text: |
+        Houve muita divulgação recomendando a ingestão de alho para evitar infecções. A OMS afirma que, embora seja "um alimento saudável que possa ter algumas propriedades antimicrobianas", não há evidências de que comer alho ou qualquer outro alimento ou substância possa proteger as pessoas do novo coronavírus.  
+        Não há nenhuma evidência de que a utilização de vitamina C, própolis ou outra substância protejam contra o novo coronavírus. Portanto, uma alimentação saudável é muito mais recomendável.
+        Até o momento, não há nenhum medicamento, substância, vitamina, alimento específico ou vacina que possa prevenir a infecção pelo novo coronavírus.
+  utter_populacao4:
+  - text: |
+        Se uma pessoa da casa tiver diagnóstico positivo, todos os moradores devem ficar em isolamento por 14 dias também. Caso outro familiar da casa também comece a apresentar sintomas leves, ele deve reiniciar o isolamento de 14 dias. 
+        Se os sintomas forem graves, como dificuldade para respirar, ele deve procurar orientação médica.
+        A pessoa que estiver com a doença deve utilizar máscara o tempo todo. Se for preciso cozinhar, use máscara de proteção, cobrindo boca e nariz todo o tempo. 
+        Depois de usar o banheiro, nunca deixe de lavar as mãos com água e sabão e sempre limpe vaso, pia e demais superfícies com álcool ou água sanitária para desinfecção do ambiente.
+        Os itens da pessoa com covid precisa ser separado. O lixo produzido pelo paciente contaminado precisa ser separado e descartado. 
+        Toalhas de banho, garfos, facas, colheres, copos e outros objetos usados pelo paciente, assim como sofás e cadeiras também não podem ser compartilhados. 
+        Os móveis da casa precisam ser limpos frequentemente com água sanitária ou álcool 70%.
+        A distância mínima entre o paciente e os demais moradores é de 1 metro.
+        No quarto usado para o isolamento, mantenha as janelas abertas para circulação do ar, a porta fechada durante todo o isolamento e limpe a maçaneta frequentemente com álcool 70% ou água sanitária.
+        Atenção! Em casas com apenas um quarto, os demais moradores devem dormir na sala, longe do paciente infectado.
+  utter_populacao5:
+  - text: |
+        Até o momento, não há evidências de que qualquer animal de estimação possa transmitir coronavírus.
+  utter_populacao6:
+  - text: |
+        Regiões ou países com transmissão comunitária do vírus devem considerar o adiamento de todos os eventos em que haja aglomeração humana
+
+actions:
+- utter_me_ajuda
+- utter_esporte
+- utter_aleatorio
+- utter_feliz
+- utter_ajuda
+- utter_triste
+- utter_bem_vindo
+forms: {}
+e2e_actions: []
