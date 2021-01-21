@@ -132,4 +132,4 @@ Por fim para utilizar o bot no telegram, basta acessá-lo [AQUI](http://t.me/Cov
 
 O bot em funcionamento:
 
-<img src="static/img/bottelegram.jpeg" alt="telegram" width="100" height="250"/>
+<img src="static/img/bottelegram.jpeg" alt="telegram" width="200" height="450"/>
